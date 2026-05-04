@@ -1,0 +1,35 @@
+@use 'partial';
+
+body{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: partial.$font;
+    background-color: partial.$bg-color;
+
+    /*nesting*/
+
+    p{
+        font-size: 20px;
+        color: partial.$text-color;
+        line-height: 1.5;
+        background-color: partial.$secondary-color;
+    }
+
+    h1, h2, h3, h4
+
+    h1, h3{
+        background-color: partial.$primary-color;
+    }
+
+    h2{
+        background-color: partial.$secondary-color;
+    }
+
+    a, link{
+        color: partial.$link-color;
+        font-style: italic;
+    }
+
+}
+

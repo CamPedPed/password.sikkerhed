@@ -1,0 +1,27 @@
+/*de globale variabler*/
+/*mixins*/
+body {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Times New Roman", Times, serif;
+  background-color: #222;
+  /*nesting*/
+}
+body p {
+  font-size: 20px;
+  color: #222;
+  line-height: 1.5;
+  background-color: #e4e4e4;
+}
+body h1, body h2, body h3, body h4 h1,
+body h3 {
+  background-color: #fafb54;
+}
+body h2 {
+  background-color: #e4e4e4;
+}
+body a, body link {
+  color: #258198;
+  font-style: italic;
+}/*# sourceMappingURL=style.css.map */
