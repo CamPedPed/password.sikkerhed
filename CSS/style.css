@@ -12,11 +12,12 @@ body p {
   font-size: 20px;
   color: #222;
   line-height: 1.5;
-  background-color: #e4e4e4;
   padding: 2rem;
 }
-body h1, body h2, body h3, body h4 h1,
-body h3 {
+body h1, body h2, body h3, body h4 {
+  padding: 2rem;
+}
+body h1, body h3 {
   background-color: #fafb54;
 }
 body h2 {
@@ -25,4 +26,21 @@ body h2 {
 body a, body link {
   color: #258198;
   font-style: italic;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.txt-section {
+  background-color: #e4e4e4;
+}
+
+footer p, header p {
+  color: #e4e4e4;
+}
+
+.stage {
+  background-color: #ffeebe;
 }/*# sourceMappingURL=style.css.map */

@@ -13,11 +13,12 @@ body{
         font-size: 20px;
         color: partial.$text-color;
         line-height: 1.5;
-        background-color: partial.$secondary-color;
-        padding: 2rem;
+        padding: partial.$space;
     }
 
-    h1, h2, h3, h4
+    h1, h2, h3, h4{
+        padding: partial.$space;
+    }
 
     h1, h3{
         background-color: partial.$primary-color;
@@ -34,3 +35,23 @@ body{
 
 }
 
+img{
+    max-width: 100%;
+    height: auto;
+}
+
+header{
+
+}
+
+.txt-section{
+    background-color: partial.$secondary-color;
+}
+
+footer p, header p{
+    color: partial.$secondary-color;
+}
+
+.stage{
+    background-color: partial.$stage-bg;
+}

@@ -1,13 +1,22 @@
 /*de globale variabler*/
 $bg-color: #222;
+$stage-bg: #ffeebe;
 $primary-color: #fafb54;
 $secondary-color: #e4e4e4;
 $link-color: #258198;
 $cta-color: #258198;
 $text-color: #222;
 $footer-color: #222;
+$space: 2rem;
 
 $font: 'Times New Roman', Times, serif;
 
 
 /*mixins*/
+
+@mixin flex($justify: center, $align: center){
+    /*$justify og $align er lokale variabler koblet til vores flex mixin. De er parametre/variabler som kan ændres når vores mixin kaldes*/
+    display: flex;
+    justify-content: $justify;
+    align-items: $align;
+}
