@@ -84,4 +84,12 @@ footer p, header p {
 .stage .btn:hover {
   background-color: #e4e4e4;
   color: #258198;
+}
+
+footer a {
+  /*$justify og $align er lokale variabler koblet til vores flex mixin. De er parametre/variabler som kan ændres når vores mixin kaldes*/
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  line-height: 1.5;
 }/*# sourceMappingURL=style.css.map */

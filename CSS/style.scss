@@ -91,3 +91,9 @@ footer p, header p{
 
 }
 
+
+footer a{
+    @include partial.flex;
+    line-height: 1.5;
+}
+
