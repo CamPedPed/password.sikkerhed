@@ -45,6 +45,20 @@ footer p, header p {
   padding: 0 2rem 0 2rem;
 }
 
+/*branching styling*/
 .stage {
   background-color: #ffeebe;
+}
+
+.btn {
+  background-color: #258198;
+  color: #e4e4e4;
+  border: none;
+  border-radius: 0.2rem;
+  padding: 1rem;
+}
+
+.btn:hover {
+  background-color: #e4e4e4;
+  color: #258198;
 }/*# sourceMappingURL=style.css.map */

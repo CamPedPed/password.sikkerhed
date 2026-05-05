@@ -44,9 +44,6 @@ img{
     height: auto;
 }
 
-header{
-
-}
 
 .txt-section{
     background-color: partial.$secondary-color;
@@ -57,6 +54,22 @@ footer p, header p{
     padding: 0 2rem 0 2rem;
 }
 
+
+/*branching styling*/
+
 .stage{
     background-color: partial.$stage-bg;
+}
+
+.btn{
+    background-color: partial.$cta-color;
+    color: partial.$secondary-color;
+    border: none;
+    border-radius: 0.2rem;
+    padding: partial.$space/2;
+}
+
+.btn:hover{
+    background-color: partial.$secondary-color;
+    color: partial.$link-color;
 }
