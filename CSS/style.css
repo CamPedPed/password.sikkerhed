@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*de globale variabler*/
 /*mixins*/
 body {
@@ -17,6 +18,10 @@ body p {
 body h1, body h2, body h3, body h4 {
   padding: 2rem;
   font-size: 30px;
+  /*$justify og $align er lokale variabler koblet til vores flex mixin. De er parametre/variabler som kan ændres når vores mixin kaldes*/
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 body h1, body h3, body h4 {
   background-color: #fafb54;
@@ -31,6 +36,10 @@ body a, body link {
 
 ul p {
   color: #e4e4e4;
+  /*$justify og $align er lokale variabler koblet til vores flex mixin. De er parametre/variabler som kan ændres når vores mixin kaldes*/
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 img {
@@ -45,22 +54,34 @@ img {
 footer p, header p {
   color: #e4e4e4;
   padding: 0 2rem 0 2rem;
+  /*$justify og $align er lokale variabler koblet til vores flex mixin. De er parametre/variabler som kan ændres når vores mixin kaldes*/
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 16px;
 }
 
 /*branching styling*/
 .stage {
   background-color: #ffeebe;
+  color: #fafb54;
+  display: none;
+  margin: 0 auto;
+  max-width: 800px;
+  padding: 2rem;
 }
-
-.btn {
+.stage.active {
+  display: block;
+}
+.stage .btn {
   background-color: #258198;
   color: #e4e4e4;
   border: none;
   border-radius: 0.2rem;
+  margin: 1rem 0;
   padding: 1rem;
 }
-
-.btn:hover {
+.stage .btn:hover {
   background-color: #e4e4e4;
   color: #258198;
 }/*# sourceMappingURL=style.css.map */

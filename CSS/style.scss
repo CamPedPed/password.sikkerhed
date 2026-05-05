@@ -19,6 +19,7 @@ body{
     h1, h2, h3, h4{
         padding: partial.$space;
         font-size: 30px;
+        @include partial.flex;
         
     }
 
@@ -39,6 +40,7 @@ body{
 
 ul p{
     color: partial.$secondary-color;
+    @include partial.flex;
 }
 
 img{
@@ -54,6 +56,8 @@ img{
 footer p, header p{
     color: partial.$secondary-color;
     padding: 0 2rem 0 2rem;
+    @include partial.flex;
+    font-size: 16px;
 }
 
 
@@ -61,17 +65,29 @@ footer p, header p{
 
 .stage{
     background-color: partial.$stage-bg;
-}
+    color: partial.$primary-color;
+    display: none;
+    margin: 0 auto;
+    max-width: 800px;
+    padding: partial.$space;
 
-.btn{
+    &.active{
+        display: block;
+    }
+
+    .btn{
     background-color: partial.$cta-color;
     color: partial.$secondary-color;
     border: none;
     border-radius: 0.2rem;
+    margin: partial.$space/2 0;
     padding: partial.$space/2;
-}
+    }
 
-.btn:hover{
+    .btn:hover{
     background-color: partial.$secondary-color;
     color: partial.$link-color;
+    }
+
 }
+
