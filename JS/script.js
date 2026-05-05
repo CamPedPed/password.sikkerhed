@@ -45,8 +45,9 @@ const nextStage = (e) => {
     let h2Text, pText, btnsText, imgPath;
 
     switch(e.target.textContent) {
-        case "Start": 
-            h2Text = "Overskrift"
+
+        case "START": 
+            h2Text = "Scenarie 1"
             pText = "Lorem ipsum dolor sit amet";
             btnsText = ["Option 1", "Option 2", "Option 3"]; //placeholder text. det der skal stå på knapperne
         break;
@@ -55,6 +56,7 @@ const nextStage = (e) => {
             h2Text = "Overskrift Option 1";
             pText = "Lorem ipsum dolor sit amet";
             btnsText = ["Start forfra"];
+            imgPath = "img/tyve.jpg";
             break;
 
         case "Option 2":
