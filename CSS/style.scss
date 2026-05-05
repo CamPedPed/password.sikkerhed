@@ -85,6 +85,11 @@ img{
 
 
 /*footer*/
+h5{
+    color: partial.$secondary-color;
+    @include partial.flex;
+}
+
 footer p, header p{
     color: partial.$secondary-color;
     padding: 0 2rem 0 2rem;

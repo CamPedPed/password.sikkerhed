@@ -51,16 +51,6 @@ img {
   background-color: #e4e4e4;
 }
 
-footer p, header p {
-  color: #e4e4e4;
-  padding: 0 2rem 0 2rem;
-  /*$justify og $align er lokale variabler koblet til vores flex mixin. De er parametre/variabler som kan ændres når vores mixin kaldes*/
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 16px;
-}
-
 /*branching styling*/
 .stage {
   background-color: #ffeebe;
@@ -84,6 +74,25 @@ footer p, header p {
 .stage .btn:hover {
   background-color: #e4e4e4;
   color: #258198;
+}
+
+/*footer*/
+h5 {
+  color: #e4e4e4;
+  /*$justify og $align er lokale variabler koblet til vores flex mixin. De er parametre/variabler som kan ændres når vores mixin kaldes*/
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+footer p, header p {
+  color: #e4e4e4;
+  padding: 0 2rem 0 2rem;
+  /*$justify og $align er lokale variabler koblet til vores flex mixin. De er parametre/variabler som kan ændres når vores mixin kaldes*/
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 16px;
 }
 
 footer a {

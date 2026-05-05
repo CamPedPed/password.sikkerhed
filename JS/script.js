@@ -26,6 +26,7 @@ const updateUI = (h2Text, pText, btnsText, imgPath) => {
 
     btnsText.forEach(text => {
         const button = document.createElement("button");
+        button.classList.add("btn");
         button.textContent = text;
         button.addEventListener("click", nextStage);
         section.append(button);
