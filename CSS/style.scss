@@ -18,9 +18,11 @@ body{
 
     h1, h2, h3, h4{
         padding: partial.$space;
+        font-size: 30px;
+        
     }
 
-    h1, h3{
+    h1, h3, h4{
         background-color: partial.$primary-color;
     }
 
@@ -28,15 +30,15 @@ body{
         background-color: partial.$secondary-color;
     }
 
-    h4{
-        color: partial.$primary-color;
-    }
-
     a, link{
         color: partial.$link-color;
         font-style: italic;
     }
 
+}
+
+ul p{
+    color: partial.$secondary-color;
 }
 
 img{

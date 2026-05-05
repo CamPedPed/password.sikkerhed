@@ -16,19 +16,21 @@ body p {
 }
 body h1, body h2, body h3, body h4 {
   padding: 2rem;
+  font-size: 30px;
 }
-body h1, body h3 {
+body h1, body h3, body h4 {
   background-color: #fafb54;
 }
 body h2 {
   background-color: #e4e4e4;
 }
-body h4 {
-  color: #fafb54;
-}
 body a, body link {
   color: #258198;
   font-style: italic;
+}
+
+ul p {
+  color: #e4e4e4;
 }
 
 img {
