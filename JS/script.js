@@ -47,26 +47,25 @@ const nextStage = (e) => {
         case "Start": 
             h2Text = "Overskrift"
             pText = "Lorem ipsum dolor sit amet";
-            bntsText = ["Option 1", "Option 2", "Option 3"]; //placeholder text. det der skal stå på knapperne
-
+            btnsText = ["Option 1", "Option 2", "Option 3"]; //placeholder text. det der skal stå på knapperne
         break;
 
         case "Option 1":
             h2Text = "Overskrift Option 1";
             pText = "Lorem ipsum dolor sit amet";
-            bntsText = ["Start forfra"];
+            btnsText = ["Start forfra"];
             break;
 
         case "Option 2":
             h2Text = "Overskrift Option 2";
             pText = "Lorem ipsum dolor sit amet";
-            bntsText = ["Start forfra"];
+            btnsText = ["Start forfra"];
             break;
 
         case "Option 3":
             h2Text = "Overskrift Option 3";
             pText = "Lorem ipsum dolor sit amet";
-            bntsText = ["Start forfra"];
+            btnsText = ["Start forfra"];
             break;
 
         case "Start forfra":

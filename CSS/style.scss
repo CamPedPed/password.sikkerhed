@@ -53,14 +53,6 @@ img{
     background-color: partial.$secondary-color;
 }
 
-footer p, header p{
-    color: partial.$secondary-color;
-    padding: 0 2rem 0 2rem;
-    @include partial.flex;
-    font-size: 16px;
-}
-
-
 /*branching styling*/
 
 .stage{
@@ -92,8 +84,23 @@ footer p, header p{
 }
 
 
+/*footer*/
+footer p, header p{
+    color: partial.$secondary-color;
+    padding: 0 2rem 0 2rem;
+    @include partial.flex;
+    font-size: 16px;
+}
+
 footer a{
     @include partial.flex;
     line-height: 1.5;
+}
+
+
+/*Media query*/
+
+@media screen {
+    
 }
 

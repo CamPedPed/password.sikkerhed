@@ -20,3 +20,5 @@ $font: 'Times New Roman', Times, serif;
     justify-content: $justify;
     align-items: $align;
 }
+
+@mixin btn()
