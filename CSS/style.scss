@@ -53,6 +53,10 @@ img{
     background-color: partial.$secondary-color;
 }
 
+.txt-section h2{
+    background-color: partial.$secondary-color;
+}
+
 /*branching styling*/
 
 .stage{
@@ -72,6 +76,8 @@ img{
     border: none;
     border-radius: 1rem;
     color: partial.$secondary-color;
+    font-size: 20px;
+    font-weight: bold;
     margin: partial.$space/2 0;
     padding: partial.$space/2;
     }

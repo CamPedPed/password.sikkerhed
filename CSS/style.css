@@ -51,6 +51,10 @@ img {
   background-color: #e4e4e4;
 }
 
+.txt-section h2 {
+  background-color: #e4e4e4;
+}
+
 /*branching styling*/
 .stage {
   background-color: #ffeebe;
@@ -68,6 +72,8 @@ img {
   border: none;
   border-radius: 1rem;
   color: #e4e4e4;
+  font-size: 20px;
+  font-weight: bold;
   margin: 1rem 0;
   padding: 1rem;
 }
