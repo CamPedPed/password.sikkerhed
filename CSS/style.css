@@ -47,24 +47,8 @@ img {
 
 .txt-section h2 {
   background-color: #e4e4e4;
-}
-
-.to-do p {
-  color: #e4e4e4;
-  /*$justify og $align er lokale variabler koblet til vores flex mixin. De er parametre/variabler som kan ændres når vores mixin kaldes*/
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.to-do a {
-  font-size: 20px;
-  font-style: normal;
-  /*$justify og $align er lokale variabler koblet til vores flex mixin. De er parametre/variabler som kan ændres når vores mixin kaldes*/
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-decoration: none;
+  padding-bottom: 0;
+  padding-top: 0;
 }
 
 /*branching styling*/
@@ -101,6 +85,25 @@ img {
   align-items: center;
 }
 
+.to-do p {
+  color: #e4e4e4;
+  /*$justify og $align er lokale variabler koblet til vores flex mixin. De er parametre/variabler som kan ændres når vores mixin kaldes*/
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.to-do a {
+  font-size: 20px;
+  font-style: normal;
+  /*$justify og $align er lokale variabler koblet til vores flex mixin. De er parametre/variabler som kan ændres når vores mixin kaldes*/
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  padding-bottom: 4rem;
+}
+
 /*footer*/
 h5 {
   color: #e4e4e4;
@@ -110,6 +113,15 @@ h5 {
   align-items: center;
   font-style: normal;
   font-size: 16px;
+}
+
+footer {
+  border-top: 0.2rem;
+  border-color: #fafb54;
+  border-style: double;
+  border-bottom: 0;
+  border-left: 0;
+  border-right: 0;
 }
 
 footer p, header p {
@@ -138,8 +150,8 @@ footer a {
 /*Media query desktop*/
 @media screen and (min-width: 769px) {
   main {
-    padding-left: 4rem;
-    padding-right: 4rem;
+    margin-left: 8rem;
+    margin-right: 8rem;
   }
   header address {
     display: flex;
@@ -148,9 +160,17 @@ footer a {
     justify-content: center;
     font-style: normal;
   }
+  .txt-section {
+    margin-left: 4rem;
+    margin-right: 4rem;
+    padding-left: 4rem;
+    padding-right: 4rem;
+    padding-top: 4rem;
+  }
   footer {
     display: flex;
     justify-content: space-around;
     padding-top: 4rem;
+    padding-bottom: 4rem;
   }
 }/*# sourceMappingURL=style.css.map */
