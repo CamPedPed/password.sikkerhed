@@ -131,15 +131,12 @@ footer a{
         padding-right: 4rem;
     }
 
-    header{
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        padding: partial.$space;
-    }
 
-    .txt-section {
-        columns: 2;
-}
+    header address {
+    display: flex;
+    gap: partial.$space;
+    align-items: center;
+    font-style: normal; // fjerner italic som address har som default
+    }
 }
 
