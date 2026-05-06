@@ -130,6 +130,7 @@ footer a {
     display: flex;
     gap: 2rem;
     align-items: center;
+    justify-content: center;
     font-style: normal;
   }
 }/*# sourceMappingURL=style.css.map */

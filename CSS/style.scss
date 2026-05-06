@@ -132,11 +132,16 @@ footer a{
     }
 
 
-    header address {
+    header address{
     display: flex;
     gap: partial.$space;
     align-items: center;
-    font-style: normal; // fjerner italic som address har som default
+    justify-content: center;
+    font-style: normal;
+    }
+
+    footer address{
+
     }
 }
 
