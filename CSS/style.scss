@@ -109,9 +109,12 @@ footer a{
 }
 
 
-/*Media query*/
+/*Media query desktop*/
 
-@media screen {
-    
+@media screen and (min-with: 769px){
+
+   header{
+    display: inline;
+   }
 }
 

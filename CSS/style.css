@@ -109,4 +109,9 @@ footer a {
   line-height: 1.5;
 }
 
-/*Media query*//*# sourceMappingURL=style.css.map */
+/*Media query desktop*/
+@media screen and (min-with: 769px) {
+  header {
+    display: inline;
+  }
+}/*# sourceMappingURL=style.css.map */
