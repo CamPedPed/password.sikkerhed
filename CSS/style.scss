@@ -12,8 +12,9 @@ body{
     p{
         font-size: 20px;
         color: partial.$text-color;
-        line-height: 1.5;
+        line-height: 1.2;
         padding: partial.$space;
+        align-items: center;
     }
 
     h1, h2, h3, h4{
@@ -37,6 +38,8 @@ body{
     }
 
 }
+
+
 
     .to-do p{
     color: partial.$secondary-color;
@@ -72,6 +75,8 @@ img{
     }
 
     .btn{
+    display: flex;
+    justify-content: center;
     background-color: partial.$cta-color;
     border: none;
     border-radius: 1rem;
@@ -87,6 +92,12 @@ img{
     color: partial.$link-color;
     }
 
+    .btn-wrapper{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
 }
 
 
@@ -94,13 +105,16 @@ img{
 h5{
     color: partial.$secondary-color;
     @include partial.flex;
+    font-style: normal;
+    font-size: 16px;
 }
 
 footer p, header p{
     color: partial.$secondary-color;
     @include partial.flex;
-    padding: 0 2rem 0 2rem;
+    padding: 0 1.5rem 0 1.5rem;
     font-size: 16px;
+    font-style: normal;
 }
 
 footer a{
@@ -117,8 +131,15 @@ footer a{
         padding-right: 4rem;
     }
 
-    .txt-section {
+    header{
         display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: partial.$space;
+    }
+
+    .txt-section {
+        columns: 2;
 }
 }
 
