@@ -49,13 +49,13 @@ const nextStage = (e) => {
         case "START": 
             h2Text = "Opret en konto"
             pText = "Du skal oprette en konto på en webshop. Hvordan vælger du dit password hertil?";
-            btnsText = ["Bruger et nemt password", "Laver et komplekst password", "Genbruger et gammelt password"]; //placeholder text. det der skal stå på knapperne
+            btnsText = ["Bruger et nemt password", "Laver et komplekst password", "Genbruger et gammelt password"];
         break;
 
         // et usikkert valg
         case "Bruger et nemt password":
             h2Text = "Ikke sikkert!";
-            pText = "Du skriver det simple password '123456'. Din konto bliver hurtigt kompromitteret!"
+            pText = "Du skriver det simple password '123456', som er et af de mest anvendte passwords verden over. Dette resulterer i, at din konto hurtigt bliver kompromitteret!"
             btnsText = ["Start forfra"];
             imgPath = "img/tyve.jpg";
             break;
@@ -63,7 +63,7 @@ const nextStage = (e) => {
         // det sikre valg
         case "Laver et komplekst password":
             h2Text = "Stærkt valg!";
-            pText = "Du laver et stærkt password, som både består af specialtegn, tal og små som store bogstaver.";
+            pText = "Du laver et stærkt password, som både består af specialtegn, tal og små som store bogstaver. Dog, er du i tvivl om, hvordan du skal kunne huske det. Derfor vælger du, at gemme det digitalt. Hvordan gør du dette?";
             btnsText = ["Jeg gemmer det i browseren", "Jeg bruger en password-manager"];
             imgPath = "img/sikkerhed.jpg";
             break;
@@ -71,7 +71,7 @@ const nextStage = (e) => {
         // middel sikkerhed
         case "Jeg gemmer det i browseren":
             h2Text = "Pas på med dette"
-            pText = "Det er en nem løsning, men det kan være usikkert, hvis du ikke bruger din egen computer eller i tilfælde af, at du glemmer at låse din computer."
+            pText = "Det er en nem løsning, men det kan være usikkert, hvis du ikke bruger din egen computer eller i tilfælde af, at du glemmer at låse din computer. At gemme det i browseren kan virke sikkert, men det kræver blot, at nogen får adgang til din computer for, at du kan hackes."
             btnsText = ["Start forfra"];
             imgPath = "img/ninja.jpg";
             break;
@@ -87,13 +87,13 @@ const nextStage = (e) => {
         // password genbrug
         case "Genbruger et gammelt password":
             h2Text = "Pas på!";
-            pText = "Du genbruger et password fra en anden konto. Bliver den hacket, er du i fare for at din nye konto også bliver det.";
-            btnsText = ["Lav et nyt password", "Fortsæt alligevel"];
+            pText = "Du genbruger et password fra en anden konto. Bliver den hacket, er du i fare for at din nye konto også bliver det. Hvad tænker du, ville være det bedste her?";
+            btnsText = ["At lave et nyt password", "Jeg fortsætter alligevel"];
             imgPath = "img/tyve.jpg";
             break;
 
         // lav et nyt password
-        case "Lav et nyt password":
+        case "At lave et nyt password":
             h2Text = "Godt valgt!";
             pText = "Du vælger at lave et nyt og stærkt password. Hvad gør du nu?";
             btnsText = ["Jeg gemmer det i browseren", "Jeg bruger en password-manger"];
@@ -101,7 +101,7 @@ const nextStage = (e) => {
             break;
         
         // sikkerhedsbristen
-        case "Fortsæt alligevel":
+        case "Jeg fortsætter alligevel":
             h2Text = "Konto kompromitteret!";
             pText = "Din konto bliver hacket via et datalæk fra en anden side";
             btnsText = ["Start forfra"];
@@ -116,26 +116,6 @@ const nextStage = (e) => {
             imgPath = "img/start.jpg";
             break;
 
-
-
-        case "Option 1":
-            h2Text = "Overskrift Option 1";
-            pText = "Lorem ipsum dolor sit amet";
-            btnsText = ["Start forfra"];
-            imgPath = "img/tyve.jpg";
-            break;
-
-        case "Option 2":
-            h2Text = "Overskrift Option 2";
-            pText = "Lorem ipsum dolor sit amet";
-            btnsText = ["Start forfra"];
-            break;
-
-        case "Option 3":
-            h2Text = "Overskrift Option 3";
-            pText = "Lorem ipsum dolor sit amet";
-            btnsText = ["Start forfra"];
-            break;
 
         case "Start forfra":
             //console.log("Start forfra button was clicked");

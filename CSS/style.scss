@@ -13,7 +13,8 @@ body{
         font-size: 20px;
         color: partial.$text-color;
         line-height: 1.2;
-        padding: partial.$space;
+        padding-left: 2rem;
+        padding-right: 2rem;
         align-items: center;
     }
 
@@ -47,6 +48,7 @@ img{
 
 .txt-section{
     background-color: partial.$secondary-color;
+    padding-bottom: 2rem;
 }
 
 .txt-section h2{
@@ -101,11 +103,14 @@ img{
 }
 
 .to-do a{
+        background-color: partial.$cta-color;
+        color: partial.$secondary-color;
         font-size: 20px;
         font-style: normal;
         @include partial.flex;
         text-decoration: none;
-        padding-bottom: 4rem;
+        padding-bottom: 2rem;
+        padding-top: 2rem;
     }
 
 
@@ -148,11 +153,7 @@ footer a{
 /*Media query desktop*/
 
 @media screen and (min-width: 769px){
-    main{
-        margin-left: 8rem;
-        margin-right: 8rem;
-    }
-
+  
     header address{
     display: flex;
     gap: partial.$space;
@@ -161,13 +162,24 @@ footer a{
     font-style: normal;
     }
 
-    .txt-section{
-        margin-left: 4rem;
-        margin-right: 4rem;
-        padding-left: 4rem;
-        padding-right: 4rem;
-        padding-top: 4rem;
+
+
+    .txt-section {
+    display: flex;
+    align-items: flex-start;
+    gap: partial.$space;
     }
+
+    .txt-section img {
+        max-width: 50%;
+        height: auto;
+    }
+
+    .text {
+        display: flex;
+        flex-direction: column;
+    }
+
 
     footer{
         display: flex;

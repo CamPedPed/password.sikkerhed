@@ -13,7 +13,8 @@ body p {
   font-size: 20px;
   color: #222;
   line-height: 1.2;
-  padding: 2rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
   align-items: center;
 }
 body h1, body h2, body h3, body h4 {
@@ -43,6 +44,7 @@ img {
 
 .txt-section {
   background-color: #e4e4e4;
+  padding-bottom: 2rem;
 }
 
 .txt-section h2 {
@@ -94,6 +96,8 @@ img {
 }
 
 .to-do a {
+  background-color: #258198;
+  color: #e4e4e4;
   font-size: 20px;
   font-style: normal;
   /*$justify og $align er lokale variabler koblet til vores flex mixin. De er parametre/variabler som kan ændres når vores mixin kaldes*/
@@ -101,7 +105,8 @@ img {
   justify-content: center;
   align-items: center;
   text-decoration: none;
-  padding-bottom: 4rem;
+  padding-bottom: 2rem;
+  padding-top: 2rem;
 }
 
 /*footer*/
@@ -149,10 +154,6 @@ footer a {
 
 /*Media query desktop*/
 @media screen and (min-width: 769px) {
-  main {
-    margin-left: 8rem;
-    margin-right: 8rem;
-  }
   header address {
     display: flex;
     gap: 2rem;
@@ -161,11 +162,17 @@ footer a {
     font-style: normal;
   }
   .txt-section {
-    margin-left: 4rem;
-    margin-right: 4rem;
-    padding-left: 4rem;
-    padding-right: 4rem;
-    padding-top: 4rem;
+    display: flex;
+    align-items: flex-start;
+    gap: 2rem;
+  }
+  .txt-section img {
+    max-width: 50%;
+    height: auto;
+  }
+  .text {
+    display: flex;
+    flex-direction: column;
   }
   footer {
     display: flex;
