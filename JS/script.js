@@ -47,10 +47,76 @@ const nextStage = (e) => {
     switch(e.target.textContent) {
 
         case "START": 
-            h2Text = "Scenarie 1"
-            pText = "Lorem ipsum dolor sit amet";
-            btnsText = ["Option 1", "Option 2", "Option 3"]; //placeholder text. det der skal stå på knapperne
+            h2Text = "Opret en konto"
+            pText = "Du skal oprette en konto på en webshop. Hvordan vælger du dit password hertil?";
+            btnsText = ["Bruger et nemt password", "Laver et komplekst password", "Genbruger et gammelt password"]; //placeholder text. det der skal stå på knapperne
         break;
+
+        // et usikkert valg
+        case "Bruger et nemt password":
+            h2Text = "Ikke sikkert!";
+            pText = "Du skriver det simple password '123456'. Din konto bliver hurtigt kompromitteret!"
+            btnsText = ["Start forfra"];
+            imgPath = "img/tyve.jpg";
+            break;
+
+        // det sikre valg
+        case "Laver et komplekst password":
+            h2Text = "Stærkt valg!";
+            pText = "Du laver et stærkt password, som både består af specialtegn, tal og små som store bogstaver.";
+            btnsText = ["Jeg gemmer det i browseren", "Jeg bruger en password-manager"];
+            imgPath = "img/sikkerhed.jpg";
+            break;
+
+        // middel sikkerhed
+        case "Jeg gemmer det i browseren":
+            h2Text = "Pas på med dette"
+            pText = "Det er en nem løsning, men det kan være usikkert, hvis du ikke bruger din egen computer eller i tilfælde af, at du glemmer at låse din computer."
+            btnsText = ["Start forfra"];
+            imgPath = "img/ninja.jpg";
+            break;
+
+        // det sikre valg
+        case "Jeg bruger en password-manager":
+            h2Text = "Stærkt valg!";
+            pText = "Du bruger en password-manager og beskytter dermed dine oplysninger optimalt.";
+            btnsText = ["Start forfra"];
+            imgPath = "img/sikkerhed.jpg";
+            break;
+
+        // password genbrug
+        case "Genbruger et gammelt password":
+            h2Text = "Pas på!";
+            pText = "Du genbruger et password fra en anden konto. Bliver den hacket, er du i fare for at din nye konto også bliver det.";
+            btnsText = ["Lav et nyt password", "Fortsæt alligevel"];
+            imgPath = "img/tyve.jpg";
+            break;
+
+        // lav et nyt password
+        case "Lav et nyt password":
+            h2Text = "Godt valgt!";
+            pText = "Du vælger at lave et nyt og stærkt password. Hvad gør du nu?";
+            btnsText = ["Jeg gemmer det i browseren", "Jeg bruger en password-manger"];
+            imgPath = "img/sikkerhed.jpg";
+            break;
+        
+        // sikkerhedsbristen
+        case "Fortsæt alligevel":
+            h2Text = "Konto kompromitteret!";
+            pText = "Din konto bliver hacket via et datalæk fra en anden side";
+            btnsText = ["Start forfra"];
+            imgPath = "img/tyve.jpg";
+            break;
+
+        //start forfra
+        case "Start forfra":
+            h2Text = "Prøv igen";
+            pText = "Træf nye valg og se om du kan forbedre din sikkerhed";
+            btnsText = ["START"];
+            imgPath = "img/start.jpg";
+            break;
+
+
 
         case "Option 1":
             h2Text = "Overskrift Option 1";
