@@ -32,25 +32,18 @@ body{
         background-color: partial.$bg-color;
     }
 
-    a, link{
+    a{
         color: partial.$link-color;
-        font-style: italic;
+        font-style: normal;
+        text-decoration: none;
     }
 
-}
-
-
-
-    .to-do p{
-    color: partial.$secondary-color;
-    @include partial.flex;
 }
 
 img{
     max-width: 100%;
     height: auto;
 }
-
 
 .txt-section{
     background-color: partial.$secondary-color;
@@ -59,6 +52,18 @@ img{
 .txt-section h2{
     background-color: partial.$secondary-color;
 }
+
+.to-do p{
+    color: partial.$secondary-color;
+    @include partial.flex;
+}
+
+.to-do a{
+        font-size: 20px;
+        font-style: normal;
+        @include partial.flex;
+        text-decoration: none;
+    }
 
 /*branching styling*/
 
@@ -102,6 +107,7 @@ img{
 
 
 /*footer*/
+
 h5{
     color: partial.$secondary-color;
     @include partial.flex;
@@ -122,6 +128,10 @@ footer a{
     line-height: 1.5;
 }
 
+.a-wrap{
+    padding-bottom: 2rem;
+}
+
 
 /*Media query desktop*/
 
@@ -140,8 +150,10 @@ footer a{
     font-style: normal;
     }
 
-    footer address{
-
+    footer{
+        display: flex;
+        justify-content: space-around;
+        padding-top: 4rem;
     }
 }
 

@@ -30,17 +30,10 @@ body h1, body h3, body h4 {
 body h2 {
   background-color: #222;
 }
-body a, body link {
+body a {
   color: #258198;
-  font-style: italic;
-}
-
-.to-do p {
-  color: #e4e4e4;
-  /*$justify og $align er lokale variabler koblet til vores flex mixin. De er parametre/variabler som kan ændres når vores mixin kaldes*/
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  font-style: normal;
+  text-decoration: none;
 }
 
 img {
@@ -54,6 +47,24 @@ img {
 
 .txt-section h2 {
   background-color: #e4e4e4;
+}
+
+.to-do p {
+  color: #e4e4e4;
+  /*$justify og $align er lokale variabler koblet til vores flex mixin. De er parametre/variabler som kan ændres når vores mixin kaldes*/
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.to-do a {
+  font-size: 20px;
+  font-style: normal;
+  /*$justify og $align er lokale variabler koblet til vores flex mixin. De er parametre/variabler som kan ændres når vores mixin kaldes*/
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
 }
 
 /*branching styling*/
@@ -120,6 +131,10 @@ footer a {
   line-height: 1.5;
 }
 
+.a-wrap {
+  padding-bottom: 2rem;
+}
+
 /*Media query desktop*/
 @media screen and (min-width: 769px) {
   main {
@@ -132,5 +147,10 @@ footer a {
     align-items: center;
     justify-content: center;
     font-style: normal;
+  }
+  footer {
+    display: flex;
+    justify-content: space-around;
+    padding-top: 4rem;
   }
 }/*# sourceMappingURL=style.css.map */
