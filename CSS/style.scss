@@ -38,7 +38,7 @@ body{
 
 }
 
-ul p{
+    .to-do p{
     color: partial.$secondary-color;
     @include partial.flex;
 }
@@ -111,10 +111,14 @@ footer a{
 
 /*Media query desktop*/
 
-@media screen and (min-with: 769px){
+@media screen and (min-width: 769px){
+    main{
+        padding-left: 4rem;
+        padding-right: 4rem;
+    }
 
-   header{
-    display: inline;
-   }
+    .txt-section {
+        display: flex;
+}
 }
 

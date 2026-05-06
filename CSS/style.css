@@ -34,7 +34,7 @@ body a, body link {
   font-style: italic;
 }
 
-ul p {
+.to-do p {
   color: #e4e4e4;
   /*$justify og $align er lokale variabler koblet til vores flex mixin. De er parametre/variabler som kan ændres når vores mixin kaldes*/
   display: flex;
@@ -110,8 +110,12 @@ footer a {
 }
 
 /*Media query desktop*/
-@media screen and (min-with: 769px) {
-  header {
-    display: inline;
+@media screen and (min-width: 769px) {
+  main {
+    padding-left: 4rem;
+    padding-right: 4rem;
+  }
+  .txt-section {
+    display: flex;
   }
 }/*# sourceMappingURL=style.css.map */
