@@ -99,6 +99,7 @@ img {
   background-color: #258198;
   color: #e4e4e4;
   font-size: 20px;
+  font-weight: bold;
   font-style: normal;
   /*$justify og $align er lokale variabler koblet til vores flex mixin. De er parametre/variabler som kan ændres når vores mixin kaldes*/
   display: flex;
@@ -107,6 +108,11 @@ img {
   text-decoration: none;
   padding-bottom: 2rem;
   padding-top: 2rem;
+}
+
+.to-do a:hover {
+  background-color: #e4e4e4;
+  color: #258198;
 }
 
 /*footer*/
