@@ -167,18 +167,31 @@ footer a {
     justify-content: center;
     font-style: normal;
   }
+  .to-do p {
+    font-size: 20px;
+    display: flex;
+    justify-content: flex-start;
+    padding-left: 12rem;
+    padding-right: 12rem;
+  }
   .txt-section {
     display: flex;
+    flex-direction: row-reverse;
     align-items: flex-start;
     gap: 2rem;
+    padding-right: 4rem;
+    padding-left: 4rem;
   }
   .txt-section img {
-    max-width: 50%;
     height: auto;
+    max-width: 40%;
+    padding-left: 2rem;
+    padding-top: 7rem;
   }
   .text {
     display: flex;
     flex-direction: column;
+    font-size: 16px;
   }
   footer {
     display: flex;
